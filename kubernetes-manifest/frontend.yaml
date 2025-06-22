@@ -25,7 +25,7 @@ spec:
         image: kratozprabhu/frontend-js:latest
         env:
         - name: VITE_REACT_APP_API_URL
-          value: "http://quizapp.nithanprabhusite/api/questions"
+          value: "http://quizapp.nithanprabhusite.co.in/api/questions"
         ports:
         - containerPort: 8080
 ---
