@@ -266,6 +266,16 @@ jobs:
           args: --severity-threshold=high
 
   Slack-notify:
+    needs:
+      [
+        frontend-test,
+        backend-test,
+        frontend-security,
+        backend-security,
+        frontend-image,
+        backend-image,
+        k8s-manifest-scan,
+      ]
     runs-on: ubuntu-latest
     if: always()
     steps:
